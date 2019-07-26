@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #ebebeb;
+  font-family: sans-serif;
+}
+
+button {
+  float: right;
+  margin-bottom: 3em;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+}
+
+section {
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  margin: 3em 0;
+  padding: 5em;
+  border-top: 5px solid #006eff;
+  -webkit-animation: anim 1s infinite alternate;
+          animation: anim 1s infinite alternate;
+}
+
+.card:nth-of-type(1) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.card:nth-of-type(2) {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+.card:nth-of-type(3) {
+  -webkit-animation-delay: 0.1 0.2s;
+          animation-delay: 0.1 0.2s;
+}
+
+@-webkit-keyframes anim {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 300px;
+  }
+}
+
+@keyframes anim {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 300px;
+  }
+}
+
+@-webkit-keyframes anim2 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+}
+
+@keyframes anim2 {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+}
+
+.newAnim {
+  -webkit-animation: anim2 1s infinite alternate !important;
+          animation: anim2 1s infinite alternate !important;
+}
+/*# sourceMappingURL=main.css.map */

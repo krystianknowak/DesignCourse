@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <button>Make it Smooth</button>
+    <div class="container">
+        <section>
+            <div class="card">
+                <h1>ani</h1>
+            </div>
+            <div class="card">
+                <h1>mat</h1>
+            </div>
+            <div class="card">
+                <h1>ion</h1>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.add('newAnim');
+            })
+        });
+    </script>
+
+</body>
+</html>
